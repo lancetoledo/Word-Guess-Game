@@ -7,8 +7,6 @@
     
 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    
-    <script src="assets/javascript/game.js"></script>
 
     <title>Word Guess Game</title>
 </head>
@@ -19,13 +17,18 @@
 <header class= "main header">
     <h1>HANGMAN</h1>
     <h2>90's Style!</h2>
+    <h1 class="answerName"> </h1>
 </header>
 
 <!-- Main Section -->
+
+
 <div class="container">
+
+    <!-- Right Side -->
     <div class="right side">
         <p>press any letter to get started!</p>
-    </div>
+    
         <div class="wins">
             <h4>Wins!</h4>
             <p id="numWins"></p>
@@ -38,6 +41,14 @@
         <span id="numGuesses"></span>
         <h4>Letters Already Guessed</h4>
         <p id="guessedLetters"></p>
+    </div>
+
+    <!-- Left Side -->
+    <div class="left side">
+        <div class="Picture change">
+            <!-- <img src=""  alt= "starterpic"> -->
+        </div>
+    </div>
 </div>
 
 
@@ -45,5 +56,7 @@
 
 
 
+
+<script src="assets/javascript/game.js"></script>
 </body>
 </html>
